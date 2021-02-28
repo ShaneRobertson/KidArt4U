@@ -1,0 +1,431 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+#root {
+  background-image: url("./image/bg9.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+}
+
+.app {
+  background-color: lightgray;
+}
+
+.header {
+  background-color: rgb(247, 181, 83);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 55px 55px;
+  justify-items: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin: 0;
+  padding-top: 2rem;
+}
+
+.headerNav {
+  background-color: lightcoral !important;
+}
+
+/* CART CARDS */
+.flex {
+  display: flex !important;
+}
+
+.cart-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px !important;
+  padding-bottom: 60px !important;
+}
+
+.cart-header {
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: transparent !important;
+  display: grid;
+  justify-items: left !important;
+  padding-left: 25px !important;
+  grid-template-columns: 100% !important;
+  grid-template-rows: 40px !important;
+}
+
+.cart-card-right {
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.cart-card-image-container {
+  padding: 5px;
+}
+
+.cart-card-image {
+  width: 235px;
+  height: 235px;
+}
+
+.cart-card-price {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.cart-card-count {
+  font-size: 15px;
+  font-weight: bold !important;
+}
+
+.cart-card-quantity {
+  padding-left: 15px;
+}
+
+/* .cart-card-amount {
+  padding-left: 15px;
+} */
+
+.cart-card-plus-button {
+  margin-left: 15px !important;
+}
+
+.cart-card-minus-button {
+  margin-right: 15px !important;
+}
+
+.trash {
+  font-size: 20px !important;
+  padding-left: 45px !important;
+  justify-content: center !important;
+}
+
+.cart-card-department,
+.cart-card-description,
+.cart-card-price,
+.cart-card-buttons-trash {
+  margin-left: 25px;
+  padding-top: 5px;
+}
+
+.cart-card-price {
+  padding-top: 15px;
+}
+
+.cart-card-buttons-trash {
+  padding-top: 15px;
+}
+
+/* END OF CART CARDS */
+
+/* ORDER SUMMARY / VISITOR & LOGGED-IN USER CART */
+
+.visitor-cart-elements,
+.loggedin-cart-elements {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: none;
+  justify-content: center;
+  padding-bottom: 16rem;
+}
+
+.visitor-cart-cards,
+.loggedin-cart-cards {
+  padding-right: 80px;
+}
+
+.order-summary-header-container {
+  background-color: whitesmoke !important;
+}
+
+.order-summary-card {
+  width: 350px !important;
+  margin-top: 50px !important;
+}
+
+.order-summary-header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+
+.order-summary-items-container,
+.order-summary-total-container {
+  margin: 0 5% !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+
+.order-summary-total-items,
+.order-summary-grand-total {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.order-summary-button-container {
+  text-align: center;
+}
+
+.order-summary-shopping-button {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 16rem !important;
+}
+
+.order-summary-button {
+  margin: 30px 0 !important;
+}
+
+.stripe-image {
+  width: 80px;
+  height: auto;
+}
+
+.checkout-stripe {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.expiration {
+  padding-left: 120px;
+  font-weight: bold;
+}
+
+.card-number {
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+.success-modal {
+  text-align: center !important;
+}
+
+.success-modal {
+  width: auto !important;
+}
+
+element.style {
+  padding-right: 100px !important;
+}
+
+/* END OF ORDER SUMMARY / VISITOR & LOGGED-IN USER CART */
+
+/* THE PRODUCT CARDS */
+.productSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 75%; */
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 19rem;
+}
+
+#showText:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+
+.admin-edit-delete {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.product-price-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px !important;
+}
+
+.product-card-text {
+  margin: 1rem 1rem !important;
+  text-align: center;
+}
+
+.price-text,
+.product-card-amount {
+  font-size: 17px !important;
+}
+
+.scale-down {
+  object-fit: scale-down;
+}
+
+/* ================= */
+
+/* THE USER CARDS/ITEMS */
+
+.userCardContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  background-color: rgb(247, 242, 242);
+}
+
+.userCardContainer:hover {
+  font-size: 105%;
+  transition: 0.2s;
+}
+/* ================= */
+
+.header-product-card {
+  background: none !important;
+}
+
+.header-nav {
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 55px 55px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.signInModal {
+  /* display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: auto; */
+  /* background-color: bisque; */
+  height: 425px;
+}
+
+.logIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  width: 100%;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  width: 100%;
+}
+
+#header-filter {
+  position: absolute;
+  right: 1rem;
+  width: 20%;
+  top: 5.5rem;
+}
+
+.footer {
+  /* position: absolute;
+  width: 100%;
+  height: 100px;
+  text-align: center; */
+  /* background-color: whitesmoke; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 16rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto 40px;
+  column-gap: 10px;
+  row-gap: 15px;
+  /* background-color: rgba(245, 245, 245, 0.9); */
+  background-color: rgb(247, 181, 83);
+}
+
+.footer-links {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  /* padding: 8px; */
+  color: black;
+  padding-left: 10px;
+}
+
+.footer-links a {
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+
+  color: black;
+  padding: 4px;
+}
+
+.footer-links h2 {
+  font-family: "Indie Flower", cursive;
+  padding: 17px 8px 8px 3px;
+}
+
+.about-kids-art > * {
+  font-family: "Indie Flower", cursive;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  color: black;
+  padding: 17px 8px 8px 30px;
+}
+
+.about-kids-art p {
+  padding-right: 100px;
+}
+
+.stay-in-touch > * {
+  font-family: "Indie Flower", cursive;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  color: black;
+  padding: 17px 8px 8px 10px;
+}
+
+.footer-copyright {
+  font-family: "Indie Flower", cursive;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  text-align: center;
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.myAccount {
+  margin: 45px 200px 45px 200px !important;
+  padding-bottom: 19rem;
+}
+
+.myUserInfo {
+  width: 300px;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  /* justify-items: center !important; */
+  /* align-items: center !important; */
+  margin-bottom: 25px !important;
+  /* background-color: blue;   */
+}
